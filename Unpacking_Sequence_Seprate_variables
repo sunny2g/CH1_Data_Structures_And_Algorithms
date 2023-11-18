@@ -1,0 +1,35 @@
+
+# PROBLEM-You have an N-element tuple or sequence that you would like to unpack into a collection
+# of N variables. pg 19
+
+# In this example we first assigned p a list and then assigned values to values to variable from list 
+p = (4,5);
+print(p);
+x,y=p;
+x;
+y;
+
+# Another example
+
+data=['TATA',50,91.1,(2012,12,22)];
+name,shares,price,data=data;
+# OR >>>name,shares,price,(year,month,day)=data; can be used
+name;
+date;
+
+# Unpacking of strings and it can work with any iterable object for ex., tuple,lists,strings,files etc.
+
+s='hello';
+a,b,c,d,e=s;
+a;
+e;
+
+# How to dicard values while unpacking 
+
+data=['TATA',50,91.1,(2012,12,22)];
+_,shares,price,_=data;
+shares;
+price;
+_;
+
+# Exercise 1.1 is completed
